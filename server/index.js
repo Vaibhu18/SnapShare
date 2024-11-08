@@ -35,7 +35,8 @@ mongoose
 
 const io = new Server(server, {
   cors: {
-    origin: `${process.env.CLIENT_URL}`,
+    origin: "https://snap-share-ten.vercel.app",
+    // origin: `${process.env.CLIENT_URL}`,
     methods: ["GET", "POST"],
   },
 });
