@@ -26,8 +26,7 @@ export const ChatContextProvider = ({ children, user }) => {
   const [allUsers, setAllUsers] = useState([]);
 
   useEffect(() => {
-    // const newSocket = io(`${import.meta.env.VITE_SOCKET_URL}`);
-    const newSocket = io("https://snapshare-1-ur7p.onrender.com");
+    const newSocket = io(`${import.meta.env.VITE_SOCKET_URL}`);
     setSocket(newSocket);
 
     return () => {
