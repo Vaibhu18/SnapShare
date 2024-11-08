@@ -1,5 +1,5 @@
-export const baseUrl = "http://localhost:5000/api";
-// export const baseUrl = "https://snapshare-1-ur7p.onrender.com/api";
+// export const baseUrl = "http://localhost:5000/api";
+export const baseUrl = "https://snapshare-faxz.onrender.com/api";
 
 export const postRequest = async (url, body) => {
   const response = await fetch(url, {
