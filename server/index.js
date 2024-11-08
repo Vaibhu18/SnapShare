@@ -33,13 +33,12 @@ mongoose
     console.log("Mongodb connection faild: ", error.message);
   });
 
-const io = new Server(server, {
-  cors: {
-    origin: "https://snap-share-ten.vercel.app",
-    // origin: `${process.env.CLIENT_URL}`,
-    methods: ["GET", "POST"],
-  },
-});
+  const io = new Server(server, {
+    cors: {
+      origin: "https://snap-share-64ive9wnq-vaibhav-shindes-projects.vercel.app", // Correct frontend URL
+      methods: ["GET", "POST"],
+    },
+  });
 
 let onlineUsers = [];
 
