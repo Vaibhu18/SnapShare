@@ -30,7 +30,7 @@ const Navbar = () => {
     <>
       <div className="bg-[#2d2d2d] w-[100%] h-[7vh] flex justify-between items-center px-16 py-2">
         <h1 className=" text-[25px] font-semibold">
-          <Link to="/">ChatApp</Link>
+          <Link to="/">SnapShare</Link>
         </h1>
         {user && <h1 className="text-[#b7b70e]">Logged in as: {user.name}</h1>}
         {user ? (
